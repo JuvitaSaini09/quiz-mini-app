@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    background-color: var(--khaki-dark) 0.5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+    box-shadow: 0px 15px 10px -15px var(--golden-yellow);
+  }
+  .title {
+    color: var(--golden-yellow);
+    cursor: pointer;
+  }
+  .linksInNavbar {
+    display: flex;
+    gap: 1rem;
+    color: white;
+  }
+  .linksInNavbar > li {
+    list-style: none;
+    border: 2px var(--golden-yellow) solid;
+    border-radius: 5px;
+    padding: 5px 10px 0 10px;
+    cursor: pointer;
+  }
+  .linksInNavbar > li:hover {
+    background-color: var(--golden-dark);
+    color: var(--khaki-dark);
+  }
+  
