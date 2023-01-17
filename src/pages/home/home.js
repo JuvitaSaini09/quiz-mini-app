@@ -5,7 +5,11 @@ export const Home = () => {
   return (
     <>
     <Navbar />
-      <main className="category-container">
+    <div className="heading-home">
+    <h1 >Welcome to the quiz </h1>
+    <p>Select a category</p>
+    </div>
+      <main className="category-container" style={{border: '10px solid rgba(0,255,0,0.3)'}} >
         {quizCategories.map((item) => {
           return (
             <div className="category-card" key={item.id}>
