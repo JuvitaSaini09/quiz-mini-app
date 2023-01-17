@@ -1,3 +1,3 @@
 import {Home} from "./home/home"
-
-export {Home};
+import { PageNotFound } from "./pageNotFound/pageNotFound";
+export {Home,PageNotFound};
