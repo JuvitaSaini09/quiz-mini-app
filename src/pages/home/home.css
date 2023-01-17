@@ -41,6 +41,35 @@ body {
       var(--golden-yellow) 0px 1px 0px inset;
     /* var(--golden-yellow) */
   }
-  @media only screen and (max-width: 1200px) {
+ 
+
+  @media only screen and (max-width: 1000px) {
+    
+    .category-card {
+      height: 11rem;
+      width: 15rem;
+    }
+
+    .center{
+      font-size: 1rem;
+      padding:3px;
+    }
+
+    .category-container {
+      gap: 1rem;
+      justify-content: center;
+      margin: 2rem 3rem;
+    }
+   
   }
   
+  
+  @media only screen and (max-width: 650px){
+    .category-card {
+      height: 8rem;
+      width: 12rem;
+    }
+    .category-container {
+      margin: 1rem 1rem;
+    }
+  }
