@@ -15,7 +15,7 @@ body {
   .category-card {
     color: white;
     height: 17rem;
-    width: 20rem;
+    width: 22rem;
   }
   .category-img {
     height: 100%;
@@ -24,10 +24,14 @@ body {
   }
   .center {
     position: relative;
-    bottom: 14%;
-    font-size: 2rem;
+    bottom: 50%;
+    font-size: 1.5rem;
     color: var(--golden-dark);
-    background-color: var(--khaki-dark);
+    border-radius:2px;
+    width:fit-content;
+    margin:auto;
+    padding:5px;
+    background: rgba(255,255,255, 0.9)
   }
   
   .category-card:hover {
