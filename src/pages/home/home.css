@@ -1,0 +1,87 @@
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2017/07/10/23/43/question-mark-2492009__340.jpg);
+}
+
+.heading-home h1 {
+  color: var(--golden-dark);
+}
+.heading-home p {
+  color: var(--golden-yellow);
+  font-size: 1.5rem;
+}
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.category-card {
+  color: white;
+  height: 17rem;
+  width: 22rem;
+}
+.category-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.center {
+  position: relative;
+  bottom: 50%;
+  font-size: 1.5rem;
+  color: var(--golden-dark);
+  border-radius: 2px;
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.category-card:hover {
+  cursor: pointer;
+  box-shadow: var(--golden-yellow) 0px 0px 0px 2px,
+    var(--golden-yellow) 0px 4px 6px -1px,
+    var(--golden-yellow) 0px 1px 0px inset;
+  /* var(--golden-yellow) */
+}
+
+@media only screen and (max-width: 1000px) {
+  .category-card {
+    height: 11rem;
+    width: 15rem;
+  }
+
+  .center {
+    font-size: 1rem;
+    padding: 3px;
+  }
+
+  .category-container {
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .category-card {
+    height: 8rem;
+    width: 12rem;
+  }
+  .category-container {
+    margin: 1rem 1rem;
+    padding-bottom: 1]3rem;
+  }
+
+  .heading-home h1 {
+    font-size: 22px;
+  }
+  .heading-home p {
+    font-size: 1rem;
+  }
+}
