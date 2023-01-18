@@ -1,3 +1,4 @@
 import {Home} from "./home/home"
 import { PageNotFound } from "./pageNotFound/pageNotFound";
-export {Home,PageNotFound};
+import {Quiz} from "./quiz/quiz"
+export {Home,PageNotFound,Quiz};
