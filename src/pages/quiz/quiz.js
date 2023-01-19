@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal } from "../../components/allComponents";
+import { Modal, Navbar } from "../../components/allComponents";
 import { useRuleModalContext } from "../../context/ruleModal/ruleModalContext";
 
 import "./quiz.css";
@@ -13,11 +13,12 @@ export const Quiz = () => {
           isRulesDisplayed ? "quiz-question block-background" : "quiz-question"
         }
       >
+        <Navbar />
         <h1 className="quiz-heading">Quiz</h1>
          {/*<------- quiz questions ---->  */}
       </div>
 
-{/*<------- rule modal ---->  */}
+      {/*<------- rule modal ---->  */}
       <div
         className="modal-container"
         style={isRulesDisplayed ? { display: "block" } : { display: "none" }}
