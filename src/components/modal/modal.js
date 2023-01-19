@@ -1,6 +1,8 @@
 import React from 'react'
+import { useRuleModalContext } from '../context/ruleModal/ruleModalContext';
 import "./modal.css"
 export const Modal=()=> {
+  const {setIsRulesDisplay} = useRuleModalContext();
   return (
     <div className="rule-modal" >
         <h1 className="rule-modal-heading">Rules</h1>
@@ -10,7 +12,7 @@ export const Modal=()=> {
             <li>Result will be shown after answering 5 questions.</li>
             <li>Good luck for the quiz .</li>
         </ul>
-        <button className="rule-ok-btn">OK</button>
+        <button className="rule-ok-btn" onClick={()=>setIsRulesDisplay(false)}>OK</button>
     </div>
   )
 }
