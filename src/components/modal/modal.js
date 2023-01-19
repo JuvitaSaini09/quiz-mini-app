@@ -1,5 +1,6 @@
 import React from 'react'
-import { useRuleModalContext } from '../context/ruleModal/ruleModalContext';
+import { useRuleModalContext } from '../../context/ruleModal/ruleModalContext';
+
 import "./modal.css"
 export const Modal=()=> {
   const {setIsRulesDisplay} = useRuleModalContext();

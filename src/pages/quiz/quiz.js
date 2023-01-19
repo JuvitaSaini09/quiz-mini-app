@@ -1,6 +1,7 @@
 import React from "react";
 import { Modal } from "../../components/allComponents";
-import { useRuleModalContext } from "../../components/context/ruleModal/ruleModalContext";
+import { useRuleModalContext } from "../../context/ruleModal/ruleModalContext";
+
 import "./quiz.css";
 
 export const Quiz = () => {
