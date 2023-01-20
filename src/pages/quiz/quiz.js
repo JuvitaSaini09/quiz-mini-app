@@ -4,6 +4,7 @@ import { Modal, Navbar} from "../../components/allComponents";
 import { useRuleModalContext } from "../../context/ruleModal/ruleModalContext";
 import {database} from "../../db/questons"
 import "./quiz.css";
+import {badge,trophy} from "../../images/allImages"
 
 export const Quiz = () => {
   const {isRulesDisplayed }= useRuleModalContext();
@@ -43,9 +44,12 @@ export const Quiz = () => {
 
          {result ? (
         <div>
-          <div>Result Page</div>
-          <div>your scores are :- {score}</div>
-          <button>go to home</button>
+          <div className="result-title"><h1>Scores</h1> <img src={badge} /></div>
+          <div className="result-scores-heading">your scores are  </div> 
+         <div className="result-scores">
+         <p>{score}/50 </p> <img className="trophy" src={trophy} /> 
+         </div>
+          <button className="start-again-btn">Start Again</button>
         </div>
       ) : (
         <div className="ques-body">
@@ -60,7 +64,7 @@ export const Quiz = () => {
             </div>
             <div className="option-btns-container">
               {quizData[quesNumber].options.map((element) => (
-                <button className="option-btns" onClick={() => handleAnswerResponse(element)}>
+                <button key={element} className="option-btns" onClick={() => handleAnswerResponse(element)}>
                   {element}
                 </button>
               ))}

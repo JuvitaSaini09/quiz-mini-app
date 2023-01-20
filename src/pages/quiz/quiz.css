@@ -3,6 +3,13 @@
   background-color: var(--golden-dark);
   padding: 1rem;
 }
+.result-title,.result-scores{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:var(--golden-yellow);
+    margin-top:2rem;
+}
 
 .block-background {
   opacity: 0.1;
@@ -57,4 +64,41 @@
   border-radius: 5px;
   font-size: 1.3rem;
   background-color: var(--golden-yellow);
+  cursor:pointer;
+}
+
+.result-scores-heading{
+  font-size:3rem;
+  margin-top: 4rem;
+  
+}
+
+.result-title img{
+    height:5rem;
+    width:5rem;
+}
+
+.start-again-btn{
+    height: 3.5rem;
+    width: 10rem;
+    border: none;
+    margin-top: 3rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background-color: var(--golden-dark);
+    cursor:pointer;
+}
+
+.start-again-btn:hover{
+    background-color: var(--golden-yellow);
+}
+
+.result-scores{
+  font-size: 4rem;
+  margin-top:0rem;
+}
+
+.trophy{
+    height:7rem;
+    width:7rem;
 }

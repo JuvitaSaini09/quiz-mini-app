@@ -45,7 +45,7 @@ export const quizCategories = [
         sports
     },
     {
-      id: 0,
+      id: 7,
       name: "Geographic",
       img:
         geographic
