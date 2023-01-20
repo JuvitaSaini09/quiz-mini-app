@@ -1,9 +1,60 @@
-.quiz-heading{
-    color:white;
-    font-size:50px;
+.quiz-heading {
+  color: var(--khaki-dark);
+  background-color: var(--golden-dark);
+  padding: 1rem;
 }
 
-.block-background{
-    opacity:0.5;
-    pointer-events: none;
+.block-background {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.quiz-body {
+  color: white;
+  font-size: 2rem;
+  background-color: var(--khaki-dark);
+  height: 40rem;
+  width: 70rem;
+  margin: auto;
+}
+
+.ques {
+  font-size: 2rem;
+}
+
+.ques-number {
+  position: relative;
+  right: 5rem;
+}
+
+.option-btns-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.option-btns {
+  padding: 1rem;
+  cursor: pointer;
+  width: 35rem;
+  font-size: 1.5rem;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.option-btns:hover {
+  background-color: var(--golden-yellow);
+}
+
+.next-btn {
+  height: 2.5rem;
+  width: 6rem;
+  border: none;
+  margin-top: 3rem;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  background-color: var(--golden-yellow);
 }

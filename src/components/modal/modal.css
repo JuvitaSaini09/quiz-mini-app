@@ -1,38 +1,51 @@
 .rule-modal{
     height:30rem;
     width:50rem;
-    background-color: var(--khaki-dark);
+    background-color: var(--golden-dark);
     margin:auto;
     margin-bottom:2rem;
     padding:1rem;
+   z-index:99;
+   position:absolute;   
+   top:9rem;
+   
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.rule-modal-body{
+    display: flex;
+    justify-content: center;
 }
 
 .rule-modal-heading{
-    color:var(--golden-yellow);
+    color:var(--khaki-dark);
     font-size: 3rem;
     
 }
 
 .rule-modal ul{
 text-align: left;
-color:white;
+color:var(--khaki-dark);
 font-size:1.5rem;
 line-height: 1.5cm;
 }
 
 .rule-ok-btn{
     color:var(--khaki-dark);
-    font-weight: bold;
+    font-size:1.2rem;
     padding:10px;
     width:4rem;
     cursor:pointer;
-    font-size: 1rem;
+
     border-radius:5px;
-    border-color:white;
+    background-color: var(--khaki-dark);
+    color:white;
+    border: none;
 }
 
 .rule-ok-btn:hover{
     background-color: var(--golden-yellow);
+    color:var(--khaki-dark);
 }
 
 @media only screen and (max-width: 900px){
