@@ -17,7 +17,7 @@ export const Quiz = () => {
   const [result, setResult] = useState(false);
 
   const incrementQuestionNUmber = () => {
-    if (quizData[quesNumber].ans === userAnswer) setScore((prev) => prev + 1);
+    if (quizData[quesNumber].ans === userAnswer) setScore((prev) => prev + 10);
     if (quesNumber >= 2) {
       setResult(true);
     } else {
