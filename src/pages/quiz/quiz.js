@@ -33,11 +33,11 @@ export const Quiz = () => {
   return (
     <>
     <Navbar />
-    <div className="quiz-body">
+    <div className={
+          isRulesDisplayed ? "quiz-body block-background" : "quiz-body"
+        }>
       <div
-        className={
-          isRulesDisplayed ? "quiz-question block-background" : "quiz-question"
-        }
+        className="quiz-question"
       >
         
          {/*<------- quiz questions ---->  */}
@@ -91,14 +91,16 @@ export const Quiz = () => {
          </div>
       </div>
 
-      {/*<------- rule modal ---->  */}
-      <div
+      
+    </div>
+{/*<------- rule modal ---->  */}
+<div
         className="modal-container"
         style={isRulesDisplayed ? { display: "block" } : { display: "none" }}
       >
         <Modal />
       </div>
-    </div>
+
     </>
   );
 };

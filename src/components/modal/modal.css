@@ -5,10 +5,8 @@
     margin:auto;
     margin-bottom:2rem;
     padding:1rem;
-   z-index:99;
    position:absolute;   
    top:9rem;
-   
    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -36,7 +34,6 @@ line-height: 1.5cm;
     padding:10px;
     width:4rem;
     cursor:pointer;
-
     border-radius:5px;
     background-color: var(--khaki-dark);
     color:white;
