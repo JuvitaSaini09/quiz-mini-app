@@ -4,6 +4,11 @@ body {
 
 .heading-home h1 {
   color: var(--golden-dark);
+  background: rgba(255, 255, 255, 0.8);
+  width:fit-content;
+  margin:10px auto;
+  padding:5px 20px;
+  border-radius:30px;
 }
 .heading-home p {
   color: var(--golden-yellow);
