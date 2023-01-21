@@ -47,6 +47,7 @@
   padding: 1rem;
   cursor: pointer;
   width: 35rem;
+  height:3.5rem;
   font-size: 1.5rem;
   text-align: left;
   border-radius: 5px;
@@ -101,4 +102,13 @@
 .trophy{
     height:7rem;
     width:7rem;
+}
+
+.ques-container{
+  border:2px solid yellow;
+}
+
+.ques{
+  border:5px solid rgb(2, 196, 255);
+  word-wrap: break-word;
 }

@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import { NavLink, useParams, useNavigate } from "react-router-dom";
 import { Modal, Navbar} from "../../components/allComponents";
 import { useRuleModalContext } from "../../context/ruleModal/ruleModalContext";
-import {database} from "../../db/questons"
+import {allCategoryQuestions} from "../../db/questons" 
 import "./quiz.css";
 import {badge,trophy} from "../../images/allImages"
 
@@ -13,12 +13,12 @@ export const Quiz = () => {
   const [score, setScore] = useState(0);
   const [userAnswer, setUserAnswer] = useState(null);
 
-  const quizData = database[category];
+  const quizData = allCategoryQuestions[category];
   const [result, setResult] = useState(false);
 
   const incrementQuestionNUmber = () => {
     if (quizData[quesNumber].ans === userAnswer) setScore((prev) => prev + 10);
-    if (quesNumber >= 2) {
+    if (quesNumber >= 4) {
       setResult(true);
     } else {
       setQuestionNumber((old) => old + 1);
@@ -60,8 +60,9 @@ export const Quiz = () => {
         
           <div className="ques-container">
             <div className="ques">
-              <span className="ques-number">Ques {quesNumber + 1} :</span> {quizData[quesNumber].ques}
+              <span className="ques-number">Ques {quesNumber + 1} : {quizData[quesNumber].ques}</span> 
             </div>
+
             <div className="option-btns-container">
               {quizData[quesNumber].options.map((element) => (
                 <button key={element} className="option-btns" onClick={() => handleAnswerResponse(element)}>
@@ -77,9 +78,7 @@ export const Quiz = () => {
                   ? { pointerEvents: "none", opacity: 0.5 }
                   : { pointerEvents: "auto", opacity: 1 }
               }
-            >
-              Next
-            </button>
+            > Next</button>
           </div>
         </div>
       )}

@@ -1,38 +1,231 @@
- const meDb = [
+
+  const generalKnowledge = [
     {
-      ques: "What is My name ?",
-      options: ["sita", "radha", "juvita", "laxmi"],
-      ans: "juvita"
+      ques: " Which one of the following river flows between Vindhyan and Satpura ranges?",
+      options: ["Narmada", "Mahanadi", "Son", "Netravati"],
+      ans: "Narmada"
     },
     {
-      ques: "What is My age ?",
-      options: [22, 25, 20, 19],
-      ans: 22
+      ques: "Who among the following wrote Sanskrit grammar?",
+      options: ["Kalidasa", "Charak", "Panini", "Aryabhatt"],
+      ans: "Panini"
     },
     {
-      ques: "What is profession ?",
-      options: ["doctor", "engineer", "teacher", "army"],
-      ans: "engineer"
+      ques: "Which among the following headstreams meets the Ganges in last?",
+      options: ["Alaknanda", "Pindar", "Mandakini", "Bhagirathi"],
+      ans: "Bhagirathi"
+    },
+   {
+      ques: "Which one of the following ports is the oldest port in India?",
+      options: ["Mumbai Port", "Chennai Port", "Kolkata Port", "Vishakhapatnam Port"],
+      ans: "Chennai Port"
+    },
+ {
+      ques: "Where was the electricity supply first introduced in India –",
+      options: ["Mumbai", "Dehradun", "Darjeeling", "Chennai"],
+      ans: "Darjeeling"
+    }
+  ];
+
+  const culture = [
+    {
+      ques: " Which one of the following river flows between Vindhyan and Satpura ranges?",
+      options: ["Narmada", "Mahanadi", "Son", "Netravati"],
+      ans: "Narmada"
+    },
+    {
+      ques: "Who among the following wrote Sanskrit grammar?",
+      options: ["Kalidasa", "Charak", "Panini", "Aryabhatt"],
+      ans: "Panini"
+    },
+    {
+      ques: "Which among the following headstreams meets the Ganges in last?",
+      options: ["Alaknanda", "Pindar", "Mandakini", "Bhagirathi"],
+      ans: "Bhagirathi"
+    },
+   {
+      ques: "Which one of the following ports is the oldest port in India?",
+      options: ["Mumbai Port", "Chennai Port", "Kolkata Port", "Vishakhapatnam Port"],
+      ans: "Chennai Port"
+    },
+ {
+      ques: "Where was the electricity supply first introduced in India –",
+      options: ["Mumbai", "Dehradun", "Darjeeling", "Chennai"],
+      ans: "Darjeeling"
+    }
+  ];
+
+  const dharmic = [
+    {
+      ques: " Which one of the following river flows between Vindhyan and Satpura ranges?",
+      options: ["Narmada", "Mahanadi", "Son", "Netravati"],
+      ans: "Narmada"
+    },
+    {
+      ques: "Who among the following wrote Sanskrit grammar?",
+      options: ["Kalidasa", "Charak", "Panini", "Aryabhatt"],
+      ans: "Panini"
+    },
+    {
+      ques: "Which among the following headstreams meets the Ganges in last?",
+      options: ["Alaknanda", "Pindar", "Mandakini", "Bhagirathi"],
+      ans: "Bhagirathi"
+    },
+   {
+      ques: "Which one of the following ports is the oldest port in India?",
+      options: ["Mumbai Port", "Chennai Port", "Kolkata Port", "Vishakhapatnam Port"],
+      ans: "Chennai Port"
+    },
+ {
+      ques: "Where was the electricity supply first introduced in India –",
+      options: ["Mumbai", "Dehradun", "Darjeeling", "Chennai"],
+      ans: "Darjeeling"
+    }
+  ];
+
+  const movies= [
+    {
+      ques: " Which one of the following river flows between Vindhyan and Satpura ranges?",
+      options: ["Narmada", "Mahanadi", "Son", "Netravati"],
+      ans: "Narmada"
+    },
+    {
+      ques: "Who among the following wrote Sanskrit grammar?",
+      options: ["Kalidasa", "Charak", "Panini", "Aryabhatt"],
+      ans: "Panini"
+    },
+    {
+      ques: "Which among the following headstreams meets the Ganges in last?",
+      options: ["Alaknanda", "Pindar", "Mandakini", "Bhagirathi"],
+      ans: "Bhagirathi"
+    },
+   {
+      ques: "Which one of the following ports is the oldest port in India?",
+      options: ["Mumbai Port", "Chennai Port", "Kolkata Port", "Vishakhapatnam Port"],
+      ans: "Chennai Port"
+    },
+ {
+      ques: "Where was the electricity supply first introduced in India –",
+      options: ["Mumbai", "Dehradun", "Darjeeling", "Chennai"],
+      ans: "Darjeeling"
+    }
+  ];
+
+  const history = [
+    {
+      ques: " Which one of the following river flows between Vindhyan and Satpura ranges?",
+      options: ["Narmada", "Mahanadi", "Son", "Netravati"],
+      ans: "Narmada"
+    },
+    {
+      ques: "Who among the following wrote Sanskrit grammar?",
+      options: ["Kalidasa", "Charak", "Panini", "Aryabhatt"],
+      ans: "Panini"
+    },
+    {
+      ques: "Which among the following headstreams meets the Ganges in last?",
+      options: ["Alaknanda", "Pindar", "Mandakini", "Bhagirathi"],
+      ans: "Bhagirathi"
+    },
+   {
+      ques: "Which one of the following ports is the oldest port in India?",
+      options: ["Mumbai Port", "Chennai Port", "Kolkata Port", "Vishakhapatnam Port"],
+      ans: "Chennai Port"
+    },
+ {
+      ques: "Where was the electricity supply first introduced in India –",
+      options: ["Mumbai", "Dehradun", "Darjeeling", "Chennai"],
+      ans: "Darjeeling"
+    }
+  ];
+
+
+  const science = [
+    {
+      ques: " Which one of the following river flows between Vindhyan and Satpura ranges?",
+      options: ["Narmada", "Mahanadi", "Son", "Netravati"],
+      ans: "Narmada"
+    },
+    {
+      ques: "Who among the following wrote Sanskrit grammar?",
+      options: ["Kalidasa", "Charak", "Panini", "Aryabhatt"],
+      ans: "Panini"
+    },
+    {
+      ques: "Which among the following headstreams meets the Ganges in last?",
+      options: ["Alaknanda", "Pindar", "Mandakini", "Bhagirathi"],
+      ans: "Bhagirathi"
+    },
+   {
+      ques: "Which one of the following ports is the oldest port in India?",
+      options: ["Mumbai Port", "Chennai Port", "Kolkata Port", "Vishakhapatnam Port"],
+      ans: "Chennai Port"
+    },
+ {
+      ques: "Where was the electricity supply first introduced in India –",
+      options: ["Mumbai", "Dehradun", "Darjeeling", "Chennai"],
+      ans: "Darjeeling"
+    }
+  ];
+
+
+  const sports = [
+    {
+      ques: " Which one of the following river flows between Vindhyan and Satpura ranges?",
+      options: ["Narmada", "Mahanadi", "Son", "Netravati"],
+      ans: "Narmada"
+    },
+    {
+      ques: "Who among the following wrote Sanskrit grammar?",
+      options: ["Kalidasa", "Charak", "Panini", "Aryabhatt"],
+      ans: "Panini"
+    },
+    {
+      ques: "Which among the following headstreams meets the Ganges in last?",
+      options: ["Alaknanda", "Pindar", "Mandakini", "Bhagirathi"],
+      ans: "Bhagirathi"
+    },
+   {
+      ques: "Which one of the following ports is the oldest port in India?",
+      options: ["Mumbai Port", "Chennai Port", "Kolkata Port", "Vishakhapatnam Port"],
+      ans: "Chennai Port"
+    },
+ {
+      ques: "Where was the electricity supply first introduced in India –",
+      options: ["Mumbai", "Dehradun", "Darjeeling", "Chennai"],
+      ans: "Darjeeling"
     }
   ];
   
- const hanuMan = [
+
+  const geographic = [
     {
-      ques: "Mata saraswati respresents ?",
-      options: ["knowledge", "water", "fire", "nature"],
-      ans: "knowledge"
+      ques: " Which one of the following river flows between Vindhyan and Satpura ranges?",
+      options: ["Narmada", "Mahanadi", "Son", "Netravati"],
+      ans: "Narmada"
     },
     {
-      ques: "bhagwat gita is spoken by ?",
-      options: ["brahm", "ram", "shiv", "krishn"],
-      ans: "krishn"
+      ques: "Who among the following wrote Sanskrit grammar?",
+      options: ["Kalidasa", "Charak", "Panini", "Aryabhatt"],
+      ans: "Panini"
     },
     {
-      ques: "Shree mean ?",
-      options: ["laxmi", "parshuram", "ganesha", "hanuman"],
-      ans: "laxmi"
+      ques: "Which among the following headstreams meets the Ganges in last?",
+      options: ["Alaknanda", "Pindar", "Mandakini", "Bhagirathi"],
+      ans: "Bhagirathi"
+    },
+   {
+      ques: "Which one of the following ports is the oldest port in India?",
+      options: ["Mumbai Port", "Chennai Port", "Kolkata Port", "Vishakhapatnam Port"],
+      ans: "Chennai Port"
+    },
+ {
+      ques: "Where was the electricity supply first introduced in India –",
+      options: ["Mumbai", "Dehradun", "Darjeeling", "Chennai"],
+      ans: "Darjeeling"
     }
   ];
   
-  export const database = [meDb, hanuMan];
+
+  export const allCategoryQuestions = [generalKnowledge,culture,movies,history,dharmic,science,sports,geographic];
   
