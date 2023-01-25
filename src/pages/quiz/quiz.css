@@ -21,7 +21,6 @@
   font-size: 2rem;
   background-color: var(--khaki-dark);
   height: 40rem;
-  width: 70rem;
   margin: auto;
 }
 
@@ -132,3 +131,4 @@ border:5px solid rgb(218, 38, 38)
   background-color: rgb(41, 201, 41);
   border:5px solid rgb(41, 201, 41);
 }
+

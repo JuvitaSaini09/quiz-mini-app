@@ -11,8 +11,9 @@ export const Modal=()=> {
         <ul>
             <li>Thier are total 5 question.</li>
             <li>you will get 10 scores for each right answer</li>
+            <li>You have select one option and then click on "confirm" button.</li>
+            <li>You can not select options after clicking on confirm button</li>
             <li>Result will be shown after answering 5 questions.</li>
-            <li>Good luck for the quiz .</li>
         </ul>
         <button className="rule-ok-btn" onClick={()=>setIsRulesDisplay(false)}>OK</button>
     </div>
