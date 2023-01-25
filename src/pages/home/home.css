@@ -28,19 +28,22 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 5px;
+  filter: blur(0.8px);
 }
 .center {
   position: relative;
   bottom: 50%;
   font-size: 1.5rem;
-  color: var(--golden-dark);
+  color: var(--golden-dark2);
   border-radius: 2px;
   width: fit-content;
   margin: auto;
   padding: 5px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 1);
 }
-
+.category-link{
+  text-decoration: none;
+}
 .category-card:hover {
   cursor: pointer;
   box-shadow: var(--golden-yellow) 0px 0px 0px 2px,
@@ -75,7 +78,7 @@ body {
   }
   .category-container {
     margin: 1rem 1rem;
-    padding-bottom:3rem;
+
   }
 
   .heading-home h1 {

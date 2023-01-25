@@ -1,7 +1,10 @@
 import "./home.css";
 import { quizCategories } from "../../db/categories";
 import { Navbar, Footer } from "../../components/allComponents";
+import { NavLink } from "react-router-dom";
+import { useRuleModalContext } from "../../context/ruleModal/ruleModalContext";
 export const Home = () => {
+  const {setIsRulesDisplay} = useRuleModalContext();
   return (
     <>
       <Navbar />
@@ -12,10 +15,12 @@ export const Home = () => {
       <main className="category-container">
         {quizCategories.map((item) => {
           return (
-            <div className="category-card" key={item.id}>
+            <NavLink to={`/quiz/${item.id}/${item.name}`} key={item.id} className="category-link" onClick={()=>setIsRulesDisplay(true)} >
+              <div className="category-card" >
               <img src={item.img} className="category-img" alt="categories" />
               <div className="center">{item.name}</div>
             </div>
+            </NavLink>
           );
         })}
       </main>

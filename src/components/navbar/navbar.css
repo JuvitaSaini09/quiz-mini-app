@@ -9,6 +9,16 @@ nav {
   padding: 0 1rem 0 1rem;
   box-shadow: 0px 15px 10px -15px var(--golden-yellow);
 }
+.title-link{
+  text-decoration: none;
+  color: var(--golden-yellow);
+}
+
+.nav-links{
+  text-decoration: none;
+  color: white;
+}
+
 .title {
   color: var(--golden-yellow);
   cursor: pointer;

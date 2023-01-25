@@ -1,0 +1,68 @@
+.rule-modal{
+    height:30rem;
+    width:50rem;
+    background-color: var(--golden-dark);
+    margin:auto;
+    margin-bottom:2rem;
+    padding:1rem;
+   position:absolute;   
+   top:9rem;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.rule-modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+.rule-modal-heading{
+    color:var(--khaki-dark);
+    font-size: 3rem;
+    
+}
+
+.rule-modal ul{
+text-align: left;
+color:var(--khaki-dark);
+font-size:1.5rem;
+line-height: 1.5cm;
+}
+
+.rule-ok-btn{
+    color:var(--khaki-dark);
+    font-size:1.2rem;
+    padding:10px;
+    width:4rem;
+    cursor:pointer;
+    border-radius:5px;
+    background-color: var(--khaki-dark);
+    color:white;
+    border: none;
+}
+
+.rule-ok-btn:hover{
+    background-color: var(--golden-yellow);
+    color:var(--khaki-dark);
+}
+
+@media only screen and (max-width: 900px){
+
+    .rule-modal{
+        height:35rem;
+        width:30rem;
+        padding:10px;
+    }
+
+    .rule-modal ul{
+        font-size:1.5rem;
+        line-height:1.2cm;
+        }
+        
+        .rule-ok-btn{
+            margin-top: 2rem;
+        }
+
+    .rule-modal-heading{
+        font-size: 2rem;
+    }
+}

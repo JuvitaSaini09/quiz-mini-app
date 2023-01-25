@@ -1,51 +1,51 @@
 import {gk,culture,dharmic,geographic,history,movies,science,sports} from "../images/allImages"
-import uuid from 'react-uuid';
+
 
 export const quizCategories = [
     {
-      id: uuid(),
+      id: 0,
       name: "General Knowledge",
       img:
         gk
     },
     {
-      id: uuid(),
+      id: 1,
       name: "Culture",
       img: culture
     },
     {
-      id: uuid(),
+      id: 2,
       name: "Movies",
       img:
         movies
     },
     {
-      id: uuid(),
+      id: 3,
       name: "History",
       img:
         history
     },
     {
-      id: uuid(),
+      id: 4,
       name: "Dharmic",
       img:
         dharmic
     },
   
     {
-      id: uuid(),
+      id: 5,
       name: "Science",
       img:
         science
     },
     {
-      id: uuid(),
+      id: 6,
       name: "Sports",
       img:
         sports
     },
     {
-      id: uuid(),
+      id: 7,
       name: "Geographic",
       img:
         geographic
