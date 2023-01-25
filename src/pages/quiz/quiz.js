@@ -64,7 +64,9 @@ export const Quiz = () => {
               <div className="result-scores">
                 <p>{score}/50 </p> <img className="trophy" src={trophy} />
               </div>
+              <NavLink to="/" >
               <button className="start-again-btn">Start Again</button>
+              </NavLink>
             </div>
           ) : (
             <div className="ques-body">
