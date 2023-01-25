@@ -46,14 +46,14 @@
   font-size: 1.5rem;
   text-align: left;
   border-radius: 5px;
-  border:none;
+  border:5px solid white;
 }
 
 .option-btns:hover {
-  background-color: var(--golden-yellow);
+  border:5px solid var(--golden-dark);
 }
 
-.next-btn {
+.next-btn ,.confirm-btn{
   height: 2.5rem;
   width: 6rem;
   border: none;
@@ -62,6 +62,15 @@
   font-size: 1.3rem;
   background-color: var(--golden-yellow);
   cursor:pointer;
+}
+
+.confirm-btn{
+  background-color: var(--golden-yellow);
+  margin-right:1rem;
+}
+
+.next-btn:hover ,.confirm-btn:hover{
+  background-color: var(--golden-dark);
 }
 
 .result-scores-heading{
@@ -104,3 +113,22 @@
   overflow-wrap: break-word;
 }
 
+.selected-option{
+  background-color: var(--golden-dark);
+  border:5px solid var(--golden-dark);
+}
+
+.bg-green{
+  background-color: rgb(41, 201, 41);
+  border:5px solid rgb(41, 201, 41);
+}
+
+.bg-red{
+background-color: rgb(218, 38, 38);
+border:5px solid rgb(218, 38, 38)
+}
+
+.bg-green-button button{
+  background-color: rgb(41, 201, 41);
+  border:5px solid rgb(41, 201, 41);
+}
