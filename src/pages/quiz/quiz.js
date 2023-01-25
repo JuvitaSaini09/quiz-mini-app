@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, useParams, useNavigate } from "react-router-dom";
+import { NavLink, useParams} from "react-router-dom";
 import { Modal, Navbar } from "../../components/allComponents";
 import { useRuleModalContext } from "../../context/ruleModal/ruleModalContext";
 import { allCategoryQuestions } from "../../db/questons";
@@ -58,7 +58,7 @@ export const Quiz = () => {
           {result ? (
             <div>
               <div className="result-title">
-                <h1>Scores</h1> <img src={badge} />
+                <h1>Scores</h1> <img src={badge} alt="result badge" />
               </div>
               <div className="result-scores-heading">your scores are </div>
               <div className="result-scores">
@@ -100,7 +100,7 @@ export const Quiz = () => {
                     >
                       <button
                         className={
-                          userAnswer === null || userAnswer != element
+                          userAnswer === null || userAnswer !== element
                             ? "option-btns"
                             : "option-btns selected-option"
                         }
