@@ -52,10 +52,10 @@ body {
   /* var(--golden-yellow) */
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
   .category-card {
-    height: 11rem;
-    width: 15rem;
+    height: 14rem;
+    width: 19rem;
   }
 
   .center {
@@ -71,14 +71,14 @@ body {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
   .category-card {
-    height: 8rem;
-    width: 12rem;
+    height: 11rem;
+    width: 17rem;
   }
   .category-container {
     margin: 1rem 1rem;
-    padding-bottom: 13rem;
+
   }
 
   .heading-home h1 {
