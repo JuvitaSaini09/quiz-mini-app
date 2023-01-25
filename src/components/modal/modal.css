@@ -6,7 +6,7 @@
     margin-bottom:2rem;
     padding:1rem;
    position:absolute;   
-   top:9rem;
+   top:25%;
    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -83,3 +83,19 @@ line-height: 1.1cm;
         }
 
 }
+
+@media only screen and (max-width: 550px){
+
+    .rule-modal{
+        width:21rem;
+        padding:10px;
+        height: 32rem;
+    }
+
+    .rule-modal ul{
+        font-size:1rem;
+        line-height:1cm;
+        }
+
+}
+
