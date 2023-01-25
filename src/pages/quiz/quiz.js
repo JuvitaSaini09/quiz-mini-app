@@ -62,7 +62,7 @@ export const Quiz = () => {
               </div>
               <div className="result-scores-heading">your scores are </div>
               <div className="result-scores">
-                <p>{score}/50 </p> <img className="trophy" src={trophy} />
+                <p>{score}/50 </p> <img className="trophy" src={trophy} alt="result trophy" />
               </div>
               <NavLink to="/" >
               <button className="start-again-btn">Start Again</button>
