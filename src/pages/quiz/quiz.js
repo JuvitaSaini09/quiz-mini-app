@@ -8,13 +8,12 @@ import { badge, trophy } from "../../images/allImages";
 
 export const Quiz = () => {
   const { isRulesDisplayed } = useRuleModalContext();
-  const { category } = useParams();
+  const { category,categoryName } = useParams();
   const [quesNumber, setQuestionNumber] = useState(0);
   const [score, setScore] = useState(0);
   const [userAnswer, setUserAnswer] = useState(null);
   const [confirmEvent, setConfirmEvent] = useState(null);
   const [confirmedClicked, setConfirmedClicked] = useState(false);
-
   const quizData = allCategoryQuestions[category];
   const [result, setResult] = useState(false);
 
@@ -27,8 +26,6 @@ export const Quiz = () => {
     }
 
     setUserAnswer(null);
-    // confirmEvent.target.classList.remove('bg-green');
-    // confirmEvent.target.classList.remove('bg-red');
     setConfirmedClicked(false);
     setConfirmEvent(null);
   };
@@ -72,7 +69,7 @@ export const Quiz = () => {
           ) : (
             <div className="ques-body">
               {" "}
-              <h3 className="quiz-heading">Dash category Quiz</h3>
+              <h3 className="quiz-heading">{categoryName} Quiz</h3>
               <div className="ques-container">
                 <div className="ques">
                   <span className="ques-number">

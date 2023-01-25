@@ -15,7 +15,7 @@ export const Home = () => {
       <main className="category-container">
         {quizCategories.map((item) => {
           return (
-            <NavLink to={`/quiz/${item.id}`} key={item.id} className="category-link" onClick={()=>setIsRulesDisplay(true)} >
+            <NavLink to={`/quiz/${item.id}/${item.name}`} key={item.id} className="category-link" onClick={()=>setIsRulesDisplay(true)} >
               <div className="category-card" >
               <img src={item.img} className="category-img" alt="categories" />
               <div className="center">{item.name}</div>

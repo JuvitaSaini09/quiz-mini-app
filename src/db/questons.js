@@ -1,6 +1,6 @@
 
   const generalKnowledge = [
-    {
+    {  
       ques: " Which one of the following river flows between Vindhyan and Satpura ranges?",
       options: ["Narmada", "Mahanadi", "Son", "Netravati"],
       ans: "Narmada"
