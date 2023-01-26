@@ -189,3 +189,31 @@ border:5px solid rgb(218, 38, 38)
   height:2rem;
 }
 }
+
+@media only screen and (max-width: 550px){
+  .quiz-body { 
+    width: 23rem;
+  }
+  
+.ques {
+  font-size: 1rem;
+  line-height: 0.6cm;
+}
+
+.option-btns {
+  width: 12rem;
+  height:2.5rem;
+  font-size: 1rem;
+}
+.confirm-btn{
+ margin-left:2rem;
+}
+.option-btns-container {
+  margin-top:3rem;
+}
+
+.next-btn ,.confirm-btn{
+  width: 5rem;
+  margin-top:3rem;
+}
+}
