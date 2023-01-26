@@ -10,6 +10,9 @@
     color:var(--golden-yellow);
     margin-top:2rem;
 }
+.result-title{
+  font-size:1.7rem;
+}
 
 .block-background {
   opacity: 0;
@@ -73,8 +76,8 @@
 }
 
 .result-scores-heading{
-  font-size:3rem;
-  margin-top: 4rem;
+  font-size:2rem;
+  margin-top: 2rem;
   
 }
 
