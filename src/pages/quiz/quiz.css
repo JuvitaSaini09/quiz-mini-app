@@ -18,14 +18,14 @@
 
 .quiz-body {
   color: white;
-  font-size: 2rem;
+  font-size: 1.2rem;
   background-color: var(--khaki-dark);
-  height: 40rem;
-  margin: auto;
+  height: 35rem;
+  margin: auto;  
 }
 
 .ques {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .option-btns-container {
@@ -38,11 +38,10 @@
 }
 
 .option-btns {
-  padding: 1rem;
   cursor: pointer;
-  width: 35rem;
-  height:3.5rem;
-  font-size: 1.5rem;
+  width: 30rem;
+  height:3rem;
+  font-size: 1.3rem;
   text-align: left;
   border-radius: 5px;
   border:5px solid white;
@@ -56,9 +55,9 @@
   height: 2.5rem;
   width: 6rem;
   border: none;
-  margin-top: 3rem;
+  margin-top: 2rem;
   border-radius: 5px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   background-color: var(--golden-yellow);
   cursor:pointer;
 }
@@ -112,6 +111,11 @@
   overflow-wrap: break-word;
 }
 
+.option-order{
+  margin-right:1rem;
+  font-size: 1.5rem;
+}
+
 .selected-option{
   background-color: var(--golden-dark);
   border:5px solid var(--golden-dark);
@@ -132,3 +136,10 @@ border:5px solid rgb(218, 38, 38)
   border:5px solid rgb(41, 201, 41);
 }
 
+@media only screen and (max-width: 900px){
+
+}
+
+@media only screen and (max-width: 650px){
+
+}

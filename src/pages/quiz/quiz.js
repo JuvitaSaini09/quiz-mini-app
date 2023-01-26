@@ -87,7 +87,7 @@ export const Quiz = () => {
                       : { pointerEvents: "auto" }
                   }
                 >
-                  {quizData[quesNumber].options.map((element) => (
+                  {quizData[quesNumber].options.map((element,index) => (
                     <div
                       key={element}
                       className={
@@ -97,7 +97,8 @@ export const Quiz = () => {
                             : ""
                           : ""
                       }
-                    >
+                    > <span className="option-order">{["A","B","C","D"][index]
+                    } )</span>
                       <button
                         className={
                           userAnswer === null || userAnswer !== element
